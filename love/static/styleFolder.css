@@ -1,0 +1,64 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Lobster', cursive; /* Usando a fonte Lobster */
+}
+
+.folder-container {
+    display: flex;
+    height: 100vh; /* Altura total da tela */
+}
+
+.folder-content {
+    display: flex;
+    width: 300%; /* Para dividir em 3 partes */
+    transition: transform 0.5s ease;
+}
+
+.section {
+    flex: 1; /* Faz com que cada seção ocupe 1/3 do espaço */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white; /* Texto branco para melhor visibilidade */
+}
+
+#left {
+    background-color: #ff69b4; /* Tom de rosa claro */
+}
+
+#center {
+    background-color: #ff99cc; /* Tom de rosa escuro */
+}
+
+#right {
+    background-color: #ff69b4; /* Tom de rosa médio */
+}
+
+/* Animação de pulso */
+@keyframes pulse {
+    from { transform: scale(1); }
+    to { transform: scale(1.1); }
+}
+
+/* Estilo da contagem regressiva */
+.counter-text {
+    font-size: 2.5rem; /* Tamanho do texto da contagem regressiva */
+    animation: pulse 1s infinite alternate; /* Animação de pulso */
+}
+
+.photo {
+    width: 80px; /* Largura fixa de 80 pixels */
+    height: 87px; /* Altura fixa de 87 pixels */
+    object-fit: cover; /* Ajusta a imagem para preencher o espaço definido, mantendo a proporção */
+    border-radius: 5px; /* Borda arredondada, opcional */
+}
+
+.photo-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espaçamento entre as imagens */
+    flex-wrap: wrap; /* Permite que as imagens quebrem para a próxima linha se necessário */
+}

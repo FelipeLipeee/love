@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folder Romântico</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styleFolder.css') }}"> <!-- Link para o CSS do folder -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> <!-- Fonte personalizada -->
+</head>
+<body>
+    <div class="folder-container" id="folder">
+        <div class="folder-content">
+            <div class="section" id="left">
+                <h3>❤️ EU TE AMO ❤️</h3>
+                <div class="photo-gallery">
+                    <img src="{{ url_for('static', filename='assets/f1.jpeg') }}" alt="Descrição da Imagem 1" class="photo">
+                    <img src="{{ url_for('static', filename='assets/f2.jpeg') }}" alt="Descrição da Imagem 2" class="photo">
+                    <img src="{{ url_for('static', filename='assets/f3.jpeg') }}" alt="Descrição da Imagem 3" class="photo">
+                    <img src="{{ url_for('static', filename='assets/f4.jpeg') }}" alt="Descrição da Imagem 1" class="photo">
+                    <img src="{{ url_for('static', filename='assets/f5.jpeg') }}" alt="Descrição da Imagem 2" class="photo">
+                    <img src="{{ url_for('static', filename='assets/f6.jpeg') }}" alt="Descrição da Imagem 1" class="photo">
+                    <img src="{{ url_for('static', filename='assets/f7.jpeg') }}" alt="Descrição da Imagem 2" class="photo">
+                    <img src="{{ url_for('static', filename='assets/f8.jpeg') }}" alt="Descrição da Imagem 1" class="photo">
+                    <img src="{{ url_for('static', filename='assets/f9.jpeg') }}" alt="Descrição da Imagem 2" class="photo">
+                    <img src="{{ url_for('static', filename='assets/f10.jpeg') }}" alt="Descrição da Imagem 1" class="photo">
+                    <img src="{{ url_for('static', filename='assets/f11.jpeg') }}" alt="Descrição da Imagem 2" class="photo">
+                    <img src="{{ url_for('static', filename='assets/f12.jpeg') }}" alt="Descrição da Imagem 1" class="photo">
+                    <img src="{{ url_for('static', filename='assets/f13.jpeg') }}" alt="Descrição da Imagem 2" class="photo">
+                    <img src="{{ url_for('static', filename='assets/f14.jpeg') }}" alt="Descrição da Imagem 1" class="photo">
+                </div>
+            </div>
+            <div class="section" id="center">
+                <h2>❤️ Faltam ❤️</h2>
+                <div id="contador" class="counter-text"></div>
+                <h1>Para o nosso grande dia!</h1>
+                <h1>💍❤️</h1>
+            </div>
+            <div class="section" id="right">
+                <h3>Boba</h3>
+                <p>Teimosa, Eu falei que ainda não tava pronto.
+                    Eu te amo meu amor ❤️</p>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='scriptFolder.js') }}"></script>
+</body>
+</html>
