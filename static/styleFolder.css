@@ -62,3 +62,20 @@ body, html {
     gap: 10px; /* Espaçamento entre as imagens */
     flex-wrap: wrap; /* Permite que as imagens quebrem para a próxima linha se necessário */
 }
+
+@media (max-width: 768px) {
+    .counter-text {
+        font-size: 1.8rem; /* Reduz o tamanho do texto da contagem regressiva */
+    }
+
+    .photo {
+        width: 50px; /* Reduz o tamanho das fotos em dispositivos móveis */
+        height: auto; /* Mantém a proporção */
+    }
+
+    .folder-content {
+        flex-direction: column; /* Muda para coluna em telas menores */
+        width: 100%; /* Ajusta a largura para 100% */
+    }
+}
+
