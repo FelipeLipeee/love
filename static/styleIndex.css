@@ -63,6 +63,22 @@ body, html {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para dar destaque */
 }
 
+@media (max-width: 768px) {
+    .name-text {
+        font-size: 1.5rem; /* Reduz o tamanho da fonte em telas pequenas */
+    }
+    
+    .open-button {
+        font-size: 4rem; /* Ajusta o tamanho do botão para ser mais adequado em celulares */
+    }
+    
+    .heart {
+        width: 30px; /* Ajusta o tamanho dos corações */
+        height: 30px;
+    }
+}
+
+
 const openButton = document.getElementById('openFolder');
 
 openButton.addEventListener('click', () => {
